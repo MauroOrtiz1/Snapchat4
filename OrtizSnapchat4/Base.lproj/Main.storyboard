@@ -52,16 +52,31 @@
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4KL-RY-0hy">
-                                <rect key="frame" x="107" y="479" width="200" height="30"/>
+                                <rect key="frame" x="107" y="479" width="200" height="32"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="200" id="Oto-qL-WPk"/>
                                 </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
                                 <state key="normal" title="Iniciar Sesion">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
                                     <action selector="iniciarSesionTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1Tu-yL-Eb1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0lY-y6-rro">
+                                <rect key="frame" x="107" y="549" width="200" height="32"/>
+                                <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="TTZ-Hs-0iw"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                <state key="normal" title="Acceder con Google">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="googleSignInTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ec3-yz-45G"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -79,7 +94,9 @@
                             <constraint firstItem="AP1-o1-xh9" firstAttribute="top" secondItem="My1-s7-TZb" secondAttribute="bottom" constant="28" id="kG8-v4-HR2"/>
                             <constraint firstItem="AP1-o1-xh9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lFt-52-Czd"/>
                             <constraint firstItem="5I9-6D-M6s" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mmr-d6-uE1"/>
+                            <constraint firstItem="0lY-y6-rro" firstAttribute="top" secondItem="4KL-RY-0hy" secondAttribute="bottom" constant="38" id="osw-yo-Eat"/>
                             <constraint firstItem="JrO-dJ-Zkh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qY9-Wb-zC8"/>
+                            <constraint firstItem="0lY-y6-rro" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xPD-dC-24P"/>
                         </constraints>
                     </view>
                     <connections>
@@ -96,6 +113,9 @@
         <image name="imagen" width="128" height="128"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

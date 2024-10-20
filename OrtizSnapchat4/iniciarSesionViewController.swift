@@ -6,7 +6,10 @@
 //
 
 import UIKit
+import Firebase
 import FirebaseAuth
+import GoogleSignIn
+import FirebaseCore
 
 class iniciarSesionViewController: UIViewController {
 
@@ -23,12 +26,34 @@ class iniciarSesionViewController: UIViewController {
             }
         }
     }
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
     }
 
+    @IBAction func googleSignInTapped(_ sender: Any) {
+        guard let clientID = FirebaseApp.app()?.options.clientID else { return }
+        let config = GIDConfiguration(clientID: clientID)
 
+        GIDSignIn.sharedInstance.signIn(with: config, presenting: self) { user, error in
+            if let error = error {
+                print("Error al iniciar sesión con Google: \(error.localizedDescription)")
+                return
+            }
+            guard let authentication = user?.authentication else {
+                print("No se obtuvo autenticación de Google")
+                return
+            }
+            let credential = GoogleAuthProvider.credential(withIDToken: authentication.idToken!, accessToken: authentication.accessToken)
+            // Iniciar sesión con Firebase usando el credential
+            Auth.auth().signIn(with: credential) { (authResult, error) in
+                if let error = error {
+                    print("Error al autenticar con Firebase: \(error.localizedDescription)")
+                    return
+                }
+                print("Inicio de sesión exitoso con Google")
+                // Navegar a la siguiente pantalla
+            }
+        }
+    }
 }
 
