@@ -102,11 +102,75 @@
                     <connections>
                         <outlet property="emailTextField" destination="ePH-UX-KQU" id="8Jo-FT-mfu"/>
                         <outlet property="passwordTextField" destination="5I9-6D-M6s" id="jcR-yh-4wz"/>
+                        <segue destination="Uff-3L-I1d" kind="presentation" identifier="iniciarsesionsegue" id="A5l-fS-752"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-10" y="54"/>
+        </scene>
+        <!--Snaps View Controller-->
+        <scene sceneID="kXg-EC-H3i">
+            <objects>
+                <viewController id="S4z-Mh-tPb" customClass="SnapsViewController" customModule="OrtizSnapchat4" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lAZ-R0-mP1">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="xR9-xF-pe7"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Ecz-aM-loV">
+                        <barButtonItem key="leftBarButtonItem" title="Cerrar Sesion" id="4ew-ls-2G3">
+                            <connections>
+                                <action selector="cerrarSesionTapped:" destination="S4z-Mh-tPb" id="M5m-RI-lsd"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="YV6-UG-UOj">
+                            <connections>
+                                <segue destination="SJc-Kx-H43" kind="show" id="7Hv-W6-F2Z"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Z6f-oa-XP2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1659.4202898550725" y="53.571428571428569"/>
+        </scene>
+        <!--Title-->
+        <scene sceneID="SdQ-EH-ah9">
+            <objects>
+                <viewController id="SJc-Kx-H43" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Pab-tc-i5c">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="kAT-JY-cpx"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Title" id="cfx-W4-R1U">
+                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="camera" id="JMi-2b-Nre"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nhT-az-8He" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2390" y="54"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="V9R-Hg-ebW">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Uff-3L-I1d" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="F41-y0-IEz">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="S4z-Mh-tPb" kind="relationship" relationship="rootViewController" id="Lgv-5f-lW8"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yvE-AG-tsQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="839" y="54"/>
         </scene>
     </scenes>
     <resources>
