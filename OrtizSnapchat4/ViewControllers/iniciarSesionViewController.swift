@@ -17,30 +17,28 @@ class iniciarSesionViewController: UIViewController {
     @IBOutlet weak var passwordTextField: UITextField!
     
     @IBAction func iniciarSesionTapped(_ sender: Any) {
-        Auth.auth().signIn(withEmail: emailTextField.text!, password: passwordTextField.text!) {(user, error) in
-            print("Intentando Iniciar Sesion")
-            if error != nil {
-                print("Se presentó el siguiente error: \(error)")
-                Auth.auth().createUser(withEmail: self.emailTextField.text!, password: self.passwordTextField.text!, completion: { (user, error) in
-                    print("Intentando crear un usuario")
-                    if error != nil {
-                        print("Se presentó el siguiente error al crear el usuario: \(error)")
-                    } else {
-                        print("El usuario fue creado exitosamente")
+        guard let email = emailTextField.text, let password = passwordTextField.text else {
+            print("Campos incompletos")
+            return
+        }
+        Auth.auth().signIn(withEmail: email, password: password) { (authResult, error) in
+            if let error = error {
+                print("Error al iniciar sesión: \(error.localizedDescription)")
+
+                // Mostrar alerta con opciones Crear o Cancelar
+                let alerta = UIAlertController(title: "Usuario no encontrado", message: "¿Deseas crear una nueva cuenta?", preferredStyle: .alert)
+                let crearAction = UIAlertAction(title: "Crear", style: .default) { _ in
+                    // Navegar a la pantalla de creación de usuarios
+                    self.performSegue(withIdentifier: "mostrarCrearUsuarioSegue", sender: nil)
+                }
+                let cancelarAction = UIAlertAction(title: "Cancelar", style: .cancel, handler: nil)
                         
-                        Database.database().reference().child("usuarios").child(user!.user.uid).child("email").setValue(user!.user.email)
-                        self.performSegue(withIdentifier: "iniciarsesionsegue", sender: nil)
-                        
-                        let alerta = UIAlertController(title: "Creacion de Usuario", message: "Usuario: \(self.emailTextField.text!) se creo correctamente.", preferredStyle: .alert)
-                        let btnOK = UIAlertAction (title: "Aceptar", style: .default, handler: {(UIAlertAction) in
-                            self.performSegue (withIdentifier: "iniciarsesionsegue", sender: nil)
-                        })
-                        alerta.addAction(btnOK)
-                        self.present (alerta, animated: true, completion: nil)
-                    }
-                })
+                alerta.addAction(crearAction)
+                alerta.addAction(cancelarAction)
+                self.present(alerta, animated: true, completion: nil)
+
             } else {
-                print("Inicio de Sesión Exitoso")
+                print("Inicio de sesión exitoso")
                 self.performSegue(withIdentifier: "iniciarsesionsegue", sender: nil)
             }
         }
@@ -49,6 +47,7 @@ class iniciarSesionViewController: UIViewController {
         super.viewDidLoad()
     }
 
+    
     @IBAction func googleSignInTapped(_ sender: Any) {
         guard let clientID = FirebaseApp.app()?.options.clientID else { return }
         let config = GIDConfiguration(clientID: clientID)

@@ -21,6 +21,7 @@
 		3419E9B72CC4AAEF00B9C3DB /* FirebaseAppCheck in Frameworks */ = {isa = PBXBuildFile; productRef = 3419E9B62CC4AAEF00B9C3DB /* FirebaseAppCheck */; };
 		3419E9B92CC4AAEF00B9C3DB /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 3419E9B82CC4AAEF00B9C3DB /* FirebaseDatabase */; };
 		3419E9C02CC56E0200B9C3DB /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = 3419E9BF2CC56E0200B9C3DB /* GoogleSignIn */; };
+		34293F762CCAA62E007104A0 /* CrearUsuarioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34293F752CCAA62E007104A0 /* CrearUsuarioViewController.swift */; };
 		3471C26F2CC97D63008EA8C5 /* ImagenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3471C26E2CC97D63008EA8C5 /* ImagenViewController.swift */; };
 		DFADFE942CC9ABEC001515D6 /* ElegirUsuarioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFADFE932CC9ABEC001515D6 /* ElegirUsuarioViewController.swift */; };
 		DFADFE982CC9B1F6001515D6 /* Usuario.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFADFE972CC9B1F6001515D6 /* Usuario.swift */; };
@@ -38,6 +39,7 @@
 		3419E9A02CC4A90300B9C3DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3419E9A32CC4A90300B9C3DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3419E9A52CC4A90300B9C3DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		34293F752CCAA62E007104A0 /* CrearUsuarioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrearUsuarioViewController.swift; sourceTree = "<group>"; };
 		3471C26E2CC97D63008EA8C5 /* ImagenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagenViewController.swift; sourceTree = "<group>"; };
 		DFADFE932CC9ABEC001515D6 /* ElegirUsuarioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElegirUsuarioViewController.swift; sourceTree = "<group>"; };
 		DFADFE972CC9B1F6001515D6 /* Usuario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Usuario.swift; sourceTree = "<group>"; };
@@ -102,6 +104,7 @@
 				DFADFE932CC9ABEC001515D6 /* ElegirUsuarioViewController.swift */,
 				3471C26E2CC97D63008EA8C5 /* ImagenViewController.swift */,
 				340220F52CC94DAF00AF07BA /* SnapsViewController.swift */,
+				34293F752CCAA62E007104A0 /* CrearUsuarioViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -204,6 +207,7 @@
 				3419E99C2CC4A90200B9C3DB /* iniciarSesionViewController.swift in Sources */,
 				3419E9982CC4A90200B9C3DB /* AppDelegate.swift in Sources */,
 				3419E99A2CC4A90200B9C3DB /* SceneDelegate.swift in Sources */,
+				34293F762CCAA62E007104A0 /* CrearUsuarioViewController.swift in Sources */,
 				DFADFE942CC9ABEC001515D6 /* ElegirUsuarioViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
