@@ -23,9 +23,13 @@
 		3419E9C02CC56E0200B9C3DB /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = 3419E9BF2CC56E0200B9C3DB /* GoogleSignIn */; };
 		34293F762CCAA62E007104A0 /* CrearUsuarioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34293F752CCAA62E007104A0 /* CrearUsuarioViewController.swift */; };
 		3471C26F2CC97D63008EA8C5 /* ImagenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3471C26E2CC97D63008EA8C5 /* ImagenViewController.swift */; };
+		348FE0152CD40D5000907016 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 348FE0142CD40D5000907016 /* SDWebImage */; };
+		348FE0172CD4593900907016 /* AudioSnapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 348FE0162CD4593900907016 /* AudioSnapViewController.swift */; };
+		348FE0192CD54DFE00907016 /* AudioSnap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 348FE0182CD54DFE00907016 /* AudioSnap.swift */; };
+		348FE01B2CD55D5000907016 /* ElegirUsuario2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 348FE01A2CD55D5000907016 /* ElegirUsuario2ViewController.swift */; };
+		348FE01F2CD59F5400907016 /* VerAudioSnapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 348FE01E2CD59F5400907016 /* VerAudioSnapViewController.swift */; };
 		DF7DF5D52CD2D9B80063AA82 /* Snap.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF7DF5D42CD2D9B80063AA82 /* Snap.swift */; };
 		DF7DF5D92CD2E1B00063AA82 /* VerSnapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF7DF5D82CD2E1B00063AA82 /* VerSnapViewController.swift */; };
-		DF7DF5DC2CD2E8400063AA82 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = DF7DF5DB2CD2E8400063AA82 /* SDWebImage */; };
 		DFADFE942CC9ABEC001515D6 /* ElegirUsuarioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFADFE932CC9ABEC001515D6 /* ElegirUsuarioViewController.swift */; };
 		DFADFE982CC9B1F6001515D6 /* Usuario.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFADFE972CC9B1F6001515D6 /* Usuario.swift */; };
 		DFF24BD52CC99A0B006E6788 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DFF24BD42CC99A0B006E6788 /* GoogleService-Info.plist */; };
@@ -44,6 +48,10 @@
 		3419E9A52CC4A90300B9C3DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		34293F752CCAA62E007104A0 /* CrearUsuarioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrearUsuarioViewController.swift; sourceTree = "<group>"; };
 		3471C26E2CC97D63008EA8C5 /* ImagenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagenViewController.swift; sourceTree = "<group>"; };
+		348FE0162CD4593900907016 /* AudioSnapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioSnapViewController.swift; sourceTree = "<group>"; };
+		348FE0182CD54DFE00907016 /* AudioSnap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioSnap.swift; sourceTree = "<group>"; };
+		348FE01A2CD55D5000907016 /* ElegirUsuario2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElegirUsuario2ViewController.swift; sourceTree = "<group>"; };
+		348FE01E2CD59F5400907016 /* VerAudioSnapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerAudioSnapViewController.swift; sourceTree = "<group>"; };
 		DF7DF5D42CD2D9B80063AA82 /* Snap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Snap.swift; sourceTree = "<group>"; };
 		DF7DF5D82CD2E1B00063AA82 /* VerSnapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerSnapViewController.swift; sourceTree = "<group>"; };
 		DFADFE932CC9ABEC001515D6 /* ElegirUsuarioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElegirUsuarioViewController.swift; sourceTree = "<group>"; };
@@ -58,7 +66,7 @@
 			files = (
 				3419E9B92CC4AAEF00B9C3DB /* FirebaseDatabase in Frameworks */,
 				3419E9B12CC4AAEF00B9C3DB /* FirebaseAnalytics in Frameworks */,
-				DF7DF5DC2CD2E8400063AA82 /* SDWebImage in Frameworks */,
+				348FE0152CD40D5000907016 /* SDWebImage in Frameworks */,
 				3419E9B32CC4AAEF00B9C3DB /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */,
 				3419E9AF2CC4AAEF00B9C3DB /* FirebaseStorageSwift-Beta in Frameworks */,
 				3419E9B72CC4AAEF00B9C3DB /* FirebaseAppCheck in Frameworks */,
@@ -112,6 +120,9 @@
 				340220F52CC94DAF00AF07BA /* SnapsViewController.swift */,
 				34293F752CCAA62E007104A0 /* CrearUsuarioViewController.swift */,
 				DF7DF5D82CD2E1B00063AA82 /* VerSnapViewController.swift */,
+				348FE0162CD4593900907016 /* AudioSnapViewController.swift */,
+				348FE01A2CD55D5000907016 /* ElegirUsuario2ViewController.swift */,
+				348FE01E2CD59F5400907016 /* VerAudioSnapViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -121,6 +132,7 @@
 			children = (
 				DFADFE972CC9B1F6001515D6 /* Usuario.swift */,
 				DF7DF5D42CD2D9B80063AA82 /* Snap.swift */,
+				348FE0182CD54DFE00907016 /* AudioSnap.swift */,
 			);
 			path = Modelos;
 			sourceTree = "<group>";
@@ -149,7 +161,7 @@
 				3419E9B62CC4AAEF00B9C3DB /* FirebaseAppCheck */,
 				3419E9B82CC4AAEF00B9C3DB /* FirebaseDatabase */,
 				3419E9BF2CC56E0200B9C3DB /* GoogleSignIn */,
-				DF7DF5DB2CD2E8400063AA82 /* SDWebImage */,
+				348FE0142CD40D5000907016 /* SDWebImage */,
 			);
 			productName = OrtizSnapchat4;
 			productReference = 3419E9942CC4A90200B9C3DB /* OrtizSnapchat4.app */;
@@ -181,7 +193,7 @@
 			packageReferences = (
 				3419E9AD2CC4AAEF00B9C3DB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 				3419E9BE2CC56E0200B9C3DB /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
-				DF7DF5DA2CD2E8400063AA82 /* XCRemoteSwiftPackageReference "SDWebImage" */,
+				348FE0132CD40D5000907016 /* XCRemoteSwiftPackageReference "SDWebImage" */,
 			);
 			productRefGroup = 3419E9952CC4A90200B9C3DB /* Products */;
 			projectDirPath = "";
@@ -213,6 +225,9 @@
 			files = (
 				340220F62CC94DAF00AF07BA /* SnapsViewController.swift in Sources */,
 				3471C26F2CC97D63008EA8C5 /* ImagenViewController.swift in Sources */,
+				348FE0192CD54DFE00907016 /* AudioSnap.swift in Sources */,
+				348FE0172CD4593900907016 /* AudioSnapViewController.swift in Sources */,
+				348FE01F2CD59F5400907016 /* VerAudioSnapViewController.swift in Sources */,
 				DF7DF5D52CD2D9B80063AA82 /* Snap.swift in Sources */,
 				DFADFE982CC9B1F6001515D6 /* Usuario.swift in Sources */,
 				DF7DF5D92CD2E1B00063AA82 /* VerSnapViewController.swift in Sources */,
@@ -221,6 +236,7 @@
 				3419E99A2CC4A90200B9C3DB /* SceneDelegate.swift in Sources */,
 				34293F762CCAA62E007104A0 /* CrearUsuarioViewController.swift in Sources */,
 				DFADFE942CC9ABEC001515D6 /* ElegirUsuarioViewController.swift in Sources */,
+				348FE01B2CD55D5000907016 /* ElegirUsuario2ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -440,12 +456,12 @@
 				version = 6.1.0;
 			};
 		};
-		DF7DF5DA2CD2E8400063AA82 /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+		348FE0132CD40D5000907016 /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SDWebImage/SDWebImage.git";
 			requirement = {
 				kind = exactVersion;
-				version = 5.13.5;
+				version = 5.8.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
@@ -486,9 +502,9 @@
 			package = 3419E9BE2CC56E0200B9C3DB /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
 			productName = GoogleSignIn;
 		};
-		DF7DF5DB2CD2E8400063AA82 /* SDWebImage */ = {
+		348FE0142CD40D5000907016 /* SDWebImage */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = DF7DF5DA2CD2E8400063AA82 /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			package = 348FE0132CD40D5000907016 /* XCRemoteSwiftPackageReference "SDWebImage" */;
 			productName = SDWebImage;
 		};
 /* End XCSwiftPackageProductDependency section */
